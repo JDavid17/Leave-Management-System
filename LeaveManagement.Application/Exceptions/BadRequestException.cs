@@ -4,7 +4,7 @@ namespace LeaveManagement.Application.Exceptions;
 
 public class BadRequestException : Exception
 {
-    private List<string> ValidationErrors { get; set; }
+    public List<string> ValidationErrors { get; }
 
     public BadRequestException(string message) : base(message)
     {
